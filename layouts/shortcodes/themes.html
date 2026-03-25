@@ -1,0 +1,10 @@
+<div class="theme-grid">
+  {{ range .Page.Site.Sections }}
+    {{ if ne .Title "Team" }}
+    <a class="theme-card" href="{{ .RelPermalink }}">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Description | default .Summary }}</p>
+    </a>
+    {{ end }}
+  {{ end }}
+</div>

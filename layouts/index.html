@@ -1,0 +1,99 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-inner">
+        <p class="hero-badge">DIREC Catalyst Project &middot; 2026--2027</p>
+        <h1>Can we teach AI to catch hackers<br><em>and prove it works?</em></h1>
+        <p class="hero-sub">We combine machine learning with formal logic to build network intrusion detectors that don't just fit the data &mdash; they satisfy provable security properties.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Student Projects</a>
+            <a href="/team/" class="btn btn-outline">Meet the Team</a>
+        </div>
+    </div>
+</section>
+
+<section class="pitch">
+    <div class="container">
+        <div class="pitch-grid">
+            <div class="pitch-item">
+                <div class="pitch-icon">&#128269;</div>
+                <h3>The Problem</h3>
+                <p>ML-based intrusion detectors trained in the lab latch onto accidental patterns, miss novel attacks, and can be fooled by adversaries.</p>
+            </div>
+            <div class="pitch-item">
+                <div class="pitch-icon">&#9889;</div>
+                <h3>Our Approach</h3>
+                <p>Differentiable logics &mdash; logical rules that plug directly into training, guiding neural networks toward robust, verifiable behavior.</p>
+            </div>
+            <div class="pitch-item">
+                <div class="pitch-icon">&#127981;</div>
+                <h3>Real-World Validation</h3>
+                <p>We test on real infrastructure with TDC NET, Denmark's largest telco, bridging the gap between theory and deployment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Student Thesis Projects</h2>
+        <p class="section-lead">We offer <strong>paid thesis projects</strong> for bachelor and master students. Work on real research problems with industry data and cutting-edge tools. Strong students may continue as <strong>research assistants</strong>.</p>
+
+        <div class="theme-grid">
+            <a class="theme-card" href="/datasets/">
+                <div class="card-icon">&#128202;</div>
+                <h3>Datasets</h3>
+                <p>Build realistic datasets that expose the gap between lab-trained classifiers and real-world network security.</p>
+                <span class="card-arrow">&rarr;</span>
+            </a>
+            <a class="theme-card" href="/rules-training/">
+                <div class="card-icon">&#128220;</div>
+                <h3>Rules & Training</h3>
+                <p>Encode security knowledge as formal rules and train classifiers that provably behave correctly.</p>
+                <span class="card-arrow">&rarr;</span>
+            </a>
+            <a class="theme-card" href="/multiparty-computation/">
+                <div class="card-icon">&#128274;</div>
+                <h3>Privacy & MPC</h3>
+                <p>Enable organizations to jointly train intrusion detectors without sharing sensitive network data.</p>
+                <span class="card-arrow">&rarr;</span>
+            </a>
+            <a class="theme-card" href="/differentiable-logics/">
+                <div class="card-icon">&#128300;</div>
+                <h3>Differentiable Logics</h3>
+                <p>Advance the math that makes it possible to train neural networks with logical constraints.</p>
+                <span class="card-arrow">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="how-to-join">
+    <div class="container">
+        <h2>How to Get Involved</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                    <h4>Read</h4>
+                    <p>Explore the project theme that interests you</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>Reach out to the supervisor on the <a href="/team/">Team</a> page</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>
+                    <h4>Propose</h4>
+                    <p>Shape a thesis topic together that fits your interests and the project</p>
+                </div>
+            </div>
+        </div>
+        <p class="join-note">We welcome students from computer science, data science, cybersecurity, and related fields. Prior ML or formal methods experience is a plus, but <strong>curiosity matters more</strong>.</p>
+    </div>
+</section>
+{{ end }}

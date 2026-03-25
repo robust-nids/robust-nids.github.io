@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | DIREC Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">&#9737;</span>
+                <span class="logo-text">Robust NIDS</span>
+            </a>
+            <nav>
+                <a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a>
+                <a href="/datasets/" {{ if eq .RelPermalink "/datasets/" }}class="active"{{ end }}>Datasets</a>
+                <a href="/rules-training/" {{ if eq .RelPermalink "/rules-training/" }}class="active"{{ end }}>Rules & Training</a>
+                <a href="/multiparty-computation/" {{ if eq .RelPermalink "/multiparty-computation/" }}class="active"{{ end }}>Privacy & MPC</a>
+                <a href="/differentiable-logics/" {{ if eq .RelPermalink "/differentiable-logics/" }}class="active"{{ end }}>Diff. Logics</a>
+                <a href="/team/" {{ if eq .RelPermalink "/team/" }}class="active"{{ end }}>Team</a>
+            </nav>
+        </div>
+    </header>
+
+    {{ block "main" . }}
+    <main class="container">
+        <div class="content-card">
+            {{ .Content }}
+        </div>
+    </main>
+    {{ end }}
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logos">
+                <span>ITU Copenhagen</span>
+                <span class="dot">&middot;</span>
+                <span>DTU</span>
+                <span class="dot">&middot;</span>
+                <span>Aalborg University</span>
+                <span class="dot">&middot;</span>
+                <span>TDC NET</span>
+            </div>
+            <p class="funding">A <a href="https://direc.dk/">DIREC</a> Catalyst Project &middot; Digital Research Centre Denmark</p>
+        </div>
+    </footer>
+</body>
+</html>

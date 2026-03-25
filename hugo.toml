@@ -1,0 +1,6 @@
+baseURL = 'https://robust-nids.github.io/'
+languageCode = 'en-us'
+title = 'Robust Network Intrusion Detection'
+
+[markup.goldmark.renderer]
+  unsafe = true
