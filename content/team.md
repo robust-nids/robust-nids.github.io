@@ -14,7 +14,7 @@ If you're a student looking for a thesis project, reach out to the supervisor li
 <div class="team-grid">
 
 <div class="profile-card">
-  <img src="/img/alessandro-bruni.jpg" alt="Alessandro Bruni">
+  {{< profile src="alessandro-bruni.jpg" alt="Alessandro Bruni" >}}
   <div class="profile-info">
     <h3>Alessandro Bruni</h3>
     <p class="profile-role">Project Lead &middot; Associate Professor</p>
@@ -34,7 +34,7 @@ If you're a student looking for a thesis project, reach out to the supervisor li
 </div>
 
 <div class="profile-card">
-  <img src="/img/nicola-dragoni.jpg" alt="Nicola Dragoni">
+  {{< profile src="nicola-dragoni.jpg" alt="Nicola Dragoni" >}}
   <div class="profile-info">
     <h3>Nicola Dragoni</h3>
     <p class="profile-role">Co-PI &middot; Professor</p>
@@ -52,7 +52,7 @@ If you're a student looking for a thesis project, reach out to the supervisor li
 </div>
 
 <div class="profile-card">
-  <img src="/img/giorgio-bacci.jpg" alt="Giorgio Bacci">
+  {{< profile src="giorgio-bacci.jpg" alt="Giorgio Bacci" >}}
   <div class="profile-info">
     <h3>Giorgio Bacci</h3>
     <p class="profile-role">Co-PI &middot; Associate Professor</p>
@@ -70,7 +70,7 @@ If you're a student looking for a thesis project, reach out to the supervisor li
 </div>
 
 <div class="profile-card">
-  <img src="/img/lars-gottschalk.jpg" alt="Lars Gottschalk">
+  {{< profile src="lars-gottschalk.jpg" alt="Lars Gottschalk" >}}
   <div class="profile-info">
     <h3>Lars Gottschalk</h3>
     <p class="profile-role">Senior Director, Cyber Research Center</p>
@@ -83,7 +83,7 @@ If you're a student looking for a thesis project, reach out to the supervisor li
 </div>
 
 <div class="profile-card">
-  <img src="/img/gusts-grinbergs.jpg" alt="Gusts Grinbergs">
+  {{< profile src="gusts-grinbergs.jpg" alt="Gusts Grinbergs" >}}
   <div class="profile-info">
     <h3>Gusts Grinbergs</h3>
     <p class="profile-role">Research Assistant</p>

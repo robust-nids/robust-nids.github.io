@@ -1,0 +1,18 @@
+{{- /*
+  Renders an optimized profile image.
+  Usage: {{< profile src="lars-gottschalk.jpg" alt="Lars Gottschalk" >}}
+  Source lives in assets/img/profiles/. Outputs <picture> with WebP + JPG,
+  resized to 180px (1x) and 360px (2x) for a 90px display size, lazy-loaded.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $img := resources.Get (printf "img/profiles/%s" $src) -}}
+{{- if not $img -}}{{ errorf "profile shortcode: image %q not found in assets/img/profiles/" $src }}{{- end -}}
+{{- $jpg1x := $img.Resize "180x q85" -}}
+{{- $jpg2x := $img.Resize "360x q82" -}}
+{{- $webp1x := $img.Resize "180x q80 webp" -}}
+{{- $webp2x := $img.Resize "360x q78 webp" -}}
+<picture>
+  <source type="image/webp" srcset="{{ $webp1x.RelPermalink }} 1x, {{ $webp2x.RelPermalink }} 2x">
+  <img src="{{ $jpg1x.RelPermalink }}" srcset="{{ $jpg1x.RelPermalink }} 1x, {{ $jpg2x.RelPermalink }} 2x" alt="{{ $alt }}" width="90" height="90" loading="lazy" decoding="async">
+</picture>
