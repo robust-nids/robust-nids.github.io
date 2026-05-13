@@ -31,6 +31,7 @@ Possible thesis directions:
 ## Relevant Literature
 
 - [Taming Differentiable Logics with Coq Formalisation. Affeldt et al., ITP 2024](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2024.4)
+- [A Foundation for Differentiable Logics using Dependent Type Theory. Affeldt, Bruni, Komendantskaya, Ślusarz, Stark, 2026](https://arxiv.org/abs/2602.23878)
 - [Induction and Recursion Principles in a Higher-Order Quantitative Logic. Bacci & Mogelberg, 2025](https://arxiv.org/abs/2501.18275)
 - [Propositional logics for the Lawvere quantale. Bacci et al.](https://entics.episciences.org/12292)
 - [Polynomial Lawvere Logic. Bacci et al.](https://arxiv.org/abs/2402.03543)
