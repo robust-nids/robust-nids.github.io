@@ -88,8 +88,29 @@ If you're a student looking for a thesis project, reach out to the supervisor li
     <h3>Gusts Grinbergs</h3>
     <p class="profile-role">Research Assistant</p>
     <p class="profile-affiliation">IT-University of Copenhagen</p>
+    <p class="profile-themes">
+      <a href="/datasets/">Datasets</a> &middot;
+      <a href="/rules-training/">Rules & Training</a> &middot;
+      <a href="/differentiable-logics/">Diff. Logics</a>
+    </p>
     <p class="profile-links">
       <a href="https://dk.linkedin.com/in/gusts-gustavs-gr%C4%ABnbergs-4b809b222">LinkedIn</a>
+    </p>
+  </div>
+</div>
+
+<div class="profile-card">
+  {{< profile src="sam-ghalayini.jpg" alt="Sam Ghalayini" >}}
+  <div class="profile-info">
+    <h3>Sam Ghalayini</h3>
+    <p class="profile-role">Research Assistant</p>
+    <p class="profile-affiliation">Technical University of Denmark</p>
+    <p class="profile-themes">
+      <a href="/multiparty-computation/">Privacy & MPC</a> &middot;
+      <a href="/differentiable-logics/">Diff. Logics</a>
+    </p>
+    <p class="profile-links">
+      <a href="https://linkedin.com/in/sam-ghalayini">LinkedIn</a>
     </p>
   </div>
 </div>
