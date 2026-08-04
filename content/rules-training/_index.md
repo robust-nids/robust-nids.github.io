@@ -26,6 +26,10 @@ Possible thesis directions:
 - The Vehicle specification language and verification toolchain
 - Adversarial robustness evaluation
 
+## Project Results
+
+{{< results theme="rules-training" >}}
+
 ## Relevant Literature
 
 - [Formally Verifying Robustness and Generalisation of Network Intrusion Detection Models. Flood et al., ACM 2024](https://dl.acm.org/doi/10.1145/3672608.3707927)

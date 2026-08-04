@@ -28,6 +28,10 @@ Possible thesis directions:
 - The Vehicle specification language
 - How theoretical advances translate into practical ML improvements
 
+## Project Results
+
+{{< results theme="differentiable-logics" >}}
+
 ## Relevant Literature
 
 - [Taming Differentiable Logics with Coq Formalisation. Affeldt et al., ITP 2024](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2024.4)

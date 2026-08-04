@@ -8,7 +8,7 @@ Network intrusion detection systems powered by machine learning look great in th
 
 This DIREC-funded research project tackles that problem head-on: we combine **machine learning** with **formal logic** so that classifiers don't just fit the data — they satisfy provable security properties. The key idea is *differentiable logics*: logical rules that plug directly into the training process, guiding neural networks toward robust, verifiable behavior.
 
-We work with **TDC NET** (Denmark's largest telco) to validate our approach on real infrastructure, and with researchers at **ITU Copenhagen**, **DTU**, and **Aalborg University**.
+We work with **TDC NET** (Denmark's largest telco) to validate our approach on real infrastructure, and with researchers at **ITU Copenhagen**, **DTU**, and **Aalborg University**. See our [results so far](/results/) — open-source tools and language extensions.
 
 ---
 

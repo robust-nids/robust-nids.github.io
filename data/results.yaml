@@ -1,0 +1,50 @@
+- title: property-driven-ml
+  type: software
+  description: >-
+    A general open-source framework for property-driven machine learning:
+    logical constraints over hyper-rectangle input regions are compiled into
+    training loss terms through differentiable logics (Gödel, Łukasiewicz,
+    Reichenbach, Yager, DL2, and Signal Temporal Logic), combined with PGD and
+    Auto-PGD adversarial training. Gusts Grinbergs is a contributor to the
+    framework, which is described in
+    [A General Framework for Property-Driven Machine Learning (Flinkow et al., 2025)](https://arxiv.org/abs/2505.00466).
+  link:
+    url: https://github.com/property-driven-ml/property-driven-ml
+    text: github.com/property-driven-ml/property-driven-ml
+  themes: [rules-training, differentiable-logics]
+
+- title: NIDS-Verify
+  type: software
+  description: >-
+    NIDS-Verify combines adversarial training with formal verification for
+    network intrusion detection: attack patterns are formally specified in
+    the [Vehicle](https://vehicle-lang.github.io/) language and enforced
+    during training through projected gradient descent over
+    hyperrectangle-bounded input regions. Extending the companion code of
+    [Flood et al., 2024](https://dl.acm.org/doi/10.1145/3672608.3707927),
+    Gusts Grinbergs re-engineered the dataset and verification pipeline —
+    rebuilding feature extraction and preprocessing for CIC-IDS-2017, adding
+    tooling for large-scale packet captures, and correcting known timestamp
+    inconsistencies in the dataset — and modernised the training stack
+    through a migration to PyTorch Lightning and integration with the
+    property-driven-ml framework.
+  link:
+    url: https://github.com/ggustavs/NIDS-Verify
+    text: github.com/ggustavs/NIDS-Verify
+  themes: [datasets, rules-training]
+
+- title: Signal Temporal Logic for Vehicle
+  type: software
+  description: >-
+    An extension of the [Vehicle](https://vehicle-lang.github.io/)
+    specification language with Signal Temporal Logic operators (`globally`,
+    `finally`, `until`) and closed-loop controller specifications, implemented
+    as a built-in differentiable logic on top of
+    [STLCG++](https://uw-ctrl.github.io/stlcg/). Joint work by Alessandro
+    Bruni, Matthew L. Daggitt, Gusts Gustavs Grīnbergs, and Ekaterina
+    Komendantskaya; a paper on this work is to appear at
+    [LOPSTR+PPDP 2026](https://icfp26.sigplan.org/home/lopstr-ppdp-2026).
+  link:
+    url: https://github.com/vehicle-lang/vehicle/pull/1123
+    text: vehicle-lang/vehicle#1123
+  themes: [differentiable-logics]

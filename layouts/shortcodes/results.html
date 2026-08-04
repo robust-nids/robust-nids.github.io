@@ -1,0 +1,28 @@
+{{- /*
+  Renders project results from data/results.yaml.
+  Usage: {{< results >}}                      all results
+         {{< results theme="datasets" >}}     only results tagged with that theme
+         {{< results type="software" >}}      only that type (software | student)
+  Theme tags are omitted when filtering by theme (redundant on a theme page).
+*/ -}}
+{{- $page := .Page -}}
+{{- $theme := .Get "theme" -}}
+{{- $type := .Get "type" -}}
+{{- range .Page.Site.Data.results -}}
+{{- if and (or (not $theme) (in .themes $theme)) (or (not $type) (eq .type $type)) }}
+<div class="result-entry">
+  <h3>{{ .title }}</h3>
+  {{ $page.RenderString (dict "display" "block") .description }}
+  <p class="result-links">
+    {{- with .link }}<a href="{{ .url }}">{{ .text }}</a>{{ end -}}
+    {{- if not $theme -}}
+      {{- if .link }} &middot; {{ end -}}
+      <em>Themes:
+      {{- range $i, $t := .themes }}{{ if $i }},{{ end }}
+        {{- with $page.Site.GetPage (printf "/%s" $t) }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end -}}
+      {{- end }}</em>
+    {{- end }}
+  </p>
+</div>
+{{- end -}}
+{{- end -}}

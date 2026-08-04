@@ -26,6 +26,10 @@ Possible thesis directions:
 - Working with industry-grade network infrastructure
 - Critical evaluation of ML benchmarks
 
+## Project Results
+
+{{< results theme="datasets" >}}
+
 ## Relevant Literature
 
 - [Bad design smells in benchmark NIDS datasets. Flood et al., EuroS&P 2024](https://lirias.kuleuven.be/retrieve/770268)
