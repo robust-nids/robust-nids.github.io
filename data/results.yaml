@@ -42,7 +42,7 @@
     as a built-in differentiable logic on top of
     [STLCG++](https://uw-ctrl.github.io/stlcg/). Joint work by Alessandro
     Bruni, Matthew L. Daggitt, Gusts Gustavs Grīnbergs, and Ekaterina
-    Komendantskaya; a paper on this work is to appear at
+    Komendantskaya; a paper on this work was presented at
     [LOPSTR+PPDP 2026](https://icfp26.sigplan.org/home/lopstr-ppdp-2026).
   link:
     url: https://github.com/vehicle-lang/vehicle/pull/1123
