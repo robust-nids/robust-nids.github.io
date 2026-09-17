@@ -32,4 +32,4 @@ We welcome students from computer science, data science, cybersecurity, and rela
 
 ---
 
-*This project is funded by [DIREC](https://direc.dk/training-robust-network-intrusion-detection-with-differentiable-logics-an-intelligent-defense-against-hackers/) (Digital Research Centre Denmark) as a Catalyst project, January 2026 -- June 2027.*
+*This project is funded by [DIREC](https://direc.dk/training-robust-network-intrusion-detection-with-differentiable-logics-an-intelligent-defense-against-hackers/) (Digital Research Centre Denmark) as a Catalyst project, March 2026 -- September 2027.*
